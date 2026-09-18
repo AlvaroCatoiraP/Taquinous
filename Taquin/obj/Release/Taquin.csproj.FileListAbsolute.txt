@@ -1,0 +1,12 @@
+C:\Users\Alvaro\Desktop\taquin-develop\Taquin\obj\Release\Taquin.csproj.AssemblyReference.cache
+C:\Users\Alvaro\Desktop\taquin-develop\Taquin\bin\Release\Taquin.exe.config
+C:\Users\Alvaro\Desktop\taquin-develop\Taquin\bin\Release\Taquin.exe
+C:\Users\Alvaro\Desktop\taquin-develop\Taquin\bin\Release\Taquin.pdb
+C:\Users\Alvaro\Desktop\taquin-develop\Taquin\obj\Release\Taquin.WinScene.resources
+C:\Users\Alvaro\Desktop\taquin-develop\Taquin\obj\Release\Taquin.MainScene.resources
+C:\Users\Alvaro\Desktop\taquin-develop\Taquin\obj\Release\Taquin.ObjectiveGrid.resources
+C:\Users\Alvaro\Desktop\taquin-develop\Taquin\obj\Release\Taquin.Properties.Resources.resources
+C:\Users\Alvaro\Desktop\taquin-develop\Taquin\obj\Release\Taquin.csproj.GenerateResource.cache
+C:\Users\Alvaro\Desktop\taquin-develop\Taquin\obj\Release\Taquin.csproj.CoreCompileInputs.cache
+C:\Users\Alvaro\Desktop\taquin-develop\Taquin\obj\Release\Taquin.exe
+C:\Users\Alvaro\Desktop\taquin-develop\Taquin\obj\Release\Taquin.pdb

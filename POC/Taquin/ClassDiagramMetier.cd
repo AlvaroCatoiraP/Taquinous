@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Taquin.Game">
+    <Position X="13.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAgEAAAAAAAAAAAACAAAAAAAAAABCAAAABAAAAQ=</HashCode>
+      <FileName>Metier\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="current_Level" />
+      <Field Name="player" />
+      <Field Name="current_round" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Taquin.Level">
+    <Position X="16" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAIAAgAAAAAAAQAAAAACgAAAEAAAEA=</HashCode>
+      <FileName>Metier\Level.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="rounds" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Taquin.Player">
+    <Position X="10.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAEAAEQAAAAAAAJAAAAAIIEAAAAAAEAgIAAAAA=</HashCode>
+      <FileName>Metier\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taquin.Round">
+    <Position X="10.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAIAAAAAAQAAA=</HashCode>
+      <FileName>Metier\Round.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="board" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Taquin.Tile">
+    <Position X="7.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Metier\Tile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taquin.Metier.Board">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAEAgAAIAAAAAIIAABAIAEgQAEAAQAAQAABBAAAA=</HashCode>
+      <FileName>Metier\Board.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="tiles" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Taquin.Metier.Cell">
+    <Position X="5.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAGAAIAAAAAAAQAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Metier\Cell.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="tile" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
