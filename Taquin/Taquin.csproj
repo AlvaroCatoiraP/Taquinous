@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <UseWindowsFormsDesigner>false</UseWindowsFormsDesigner>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9888599A-B912-48DE-A85A-700FF41A1EB1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Taquin</RootNamespace>
+    <AssemblyName>Taquin</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Taquinou|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Taquinou\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Taquinou|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Taquinou\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconTaquinou.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Engine\Board.cs" />
+    <Compile Include="Engine\RobotInterpreter.cs" />
+    <Compile Include="Screens\RobotConsole.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Engine\Game.cs" />
+    <Compile Include="Data\GameData.cs" />
+    <Compile Include="Engine\TileMovementHandler.cs" />
+    <Compile Include="Screens\DisplayTop10 .cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Screens\FinalWinScene.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Screens\RulesLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Screens\SkipScene.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Screens\WinScene.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Screens\GameGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Screens\HealthPoint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Screens\ObjectiveGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Screens\TimeExpireScene.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Screens\TimerGame.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Engine\Cell.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Screens\GameScene.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Engine\Player.cs" />
+    <Compile Include="Engine\Level.cs" />
+    <Compile Include="Engine\Tile.cs" />
+    <Compile Include="Screens\MainScene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Screens\WinScene.resx">
+      <DependentUpon>WinScene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\MainScene.resx">
+      <DependentUpon>MainScene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ObjectiveGrid.resx">
+      <DependentUpon>ObjectiveGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagramMetier.cd" />
+    <None Include="ClassDiagramGui.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\fond.jpg" />
+    <EmbeddedResource Include="Resources\hers-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\0.jpg" />
+    <EmbeddedResource Include="Resources\1.jpg" />
+    <EmbeddedResource Include="Resources\10.jpg" />
+    <EmbeddedResource Include="Resources\11.jpg" />
+    <EmbeddedResource Include="Resources\12.jpg" />
+    <EmbeddedResource Include="Resources\13.jpg" />
+    <EmbeddedResource Include="Resources\14.jpg" />
+    <EmbeddedResource Include="Resources\15.jpg" />
+    <EmbeddedResource Include="Resources\16.jpg" />
+    <EmbeddedResource Include="Resources\2.jpg" />
+    <EmbeddedResource Include="Resources\3.jpg" />
+    <EmbeddedResource Include="Resources\4.jpg" />
+    <EmbeddedResource Include="Resources\5.jpg" />
+    <EmbeddedResource Include="Resources\6.jpg" />
+    <EmbeddedResource Include="Resources\7.jpg" />
+    <EmbeddedResource Include="Resources\8.jpg" />
+    <EmbeddedResource Include="Resources\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\17.jpg" />
+    <EmbeddedResource Include="Resources\18.jpg" />
+    <EmbeddedResource Include="Resources\19.jpg" />
+    <EmbeddedResource Include="Resources\20.jpg" />
+    <EmbeddedResource Include="Resources\21.jpg" />
+    <EmbeddedResource Include="Resources\22.jpg" />
+    <EmbeddedResource Include="Resources\23.jpg" />
+    <EmbeddedResource Include="Resources\24.jpg" />
+    <EmbeddedResource Include="Resources\25.jpg" />
+    <EmbeddedResource Include="Resources\26.jpg" />
+    <EmbeddedResource Include="Resources\27.jpg" />
+    <EmbeddedResource Include="Resources\28.jpg" />
+    <EmbeddedResource Include="Resources\29.jpg" />
+    <EmbeddedResource Include="Resources\30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iconTaquinou.ico" />
+    <EmbeddedResource Include="Resources\iconTaquinou.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
+
