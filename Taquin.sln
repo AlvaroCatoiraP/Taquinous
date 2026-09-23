@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taquin", "Taquin\Taquin.csproj", "{9888599A-B912-48DE-A85A-700FF41A1EB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taquin.UnitTests", "Taquin.UnitTests\Taquin.UnitTests.csproj", "{7DCBAB95-94D1-4E49-A809-FD1156216E8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9888599A-B912-48DE-A85A-700FF41A1EB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9888599A-B912-48DE-A85A-700FF41A1EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9888599A-B912-48DE-A85A-700FF41A1EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9888599A-B912-48DE-A85A-700FF41A1EB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DCBAB95-94D1-4E49-A809-FD1156216E8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DCBAB95-94D1-4E49-A809-FD1156216E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DCBAB95-94D1-4E49-A809-FD1156216E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {213CD611-CD44-47BD-87DB-FE3F5DC735F4}
+	EndGlobalSection
+EndGlobal
