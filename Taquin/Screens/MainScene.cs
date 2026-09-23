@@ -19,6 +19,7 @@ namespace Taquin
         private Panel main_panel;
         private Game game;
         private Button quitButton;
+        internal bool DeveloperPanelVisible { get; set; } = true;
         private Control courseBanner;
         private bool centeringLayout;
 

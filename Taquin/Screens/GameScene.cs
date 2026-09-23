@@ -19,6 +19,7 @@ namespace Taquin
         private int total_time;
         private TimerGame timer;
         private RobotConsole robotConsole;
+        private Button toggleDeveloperButton;
         public bool IsChallenge { get; private set; }
         public bool ChallengeFinished { get; private set; }
         private int challengeMoves;
@@ -39,9 +40,13 @@ namespace Taquin
             this.game = game;
             this.window = window;
             BackColor = Color.FloralWhite;
-            ColumnCount = 4;
-            RowCount = 4;
+            ColumnCount = 3;
+            RowCount = 8;
             AutoSize = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+            ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+            ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
             Anchor = AnchorStyles.Top | AnchorStyles.Left;
             Padding = new Padding(10);
 
@@ -153,9 +158,35 @@ namespace Taquin
             robotConsole = new RobotConsole(game_grid, this);
             this.Controls.Add(robotConsole, 0, 1);
             this.SetRowSpan(robotConsole, 5);
+            toggleDeveloperButton = new Button
+            {
+                AutoSize = true,
+                Anchor = AnchorStyles.None,
+                Margin = new Padding(3, 12, 3, 3),
+                Padding = new Padding(10, 4, 10, 4)
+            };
+            toggleDeveloperButton.Click += (sender, e) =>
+            {
+                window.DeveloperPanelVisible = !window.DeveloperPanelVisible;
+                UpdateDeveloperPanel();
+            };
+            Controls.Add(toggleDeveloperButton, 0, 7);
+            SetColumnSpan(toggleDeveloperButton, 3);
+            UpdateDeveloperPanel();
 
         }
 
+        private void UpdateDeveloperPanel()
+        {
+            SuspendLayout();
+            bool show = window.DeveloperPanelVisible;
+            robotConsole.Visible = show;
+            ColumnStyles[0].SizeType = show ? SizeType.AutoSize : SizeType.Absolute;
+            ColumnStyles[0].Width = 0;
+            toggleDeveloperButton.Text = show ? "Masquer la console" : "Afficher la console";
+            ResumeLayout(true);
+            window.PerformLayout();
+        }
         private Panel CreateNumberedGrid()
         {
             const int headerSize = 28;
